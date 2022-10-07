@@ -11,5 +11,6 @@
 
     <color name="purple">#FF9800</color>
     <color name="grey">#DDDDDD</color>
+    <color name="colorSecondary">#E28700</color>
 
 </resources>

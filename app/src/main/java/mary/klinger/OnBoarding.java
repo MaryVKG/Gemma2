@@ -22,7 +22,7 @@ public class OnBoarding extends AppCompatActivity {
     LinearLayout dotsLayout;
     SliderAdapter sliderAdapter;
     TextView[] dots;
-    Button letsGetStarted, next;
+    Button letsGetStarted;
     Animation animation;
     int currentPos;
 
@@ -40,7 +40,7 @@ public class OnBoarding extends AppCompatActivity {
         //Call adapter
         sliderAdapter = new SliderAdapter(this);
         viewPager.setAdapter(sliderAdapter);
-        next = findViewById(R.id.next_btn);
+
         //Dots
         addDots(0);
         viewPager.addOnPageChangeListener(changeListener);
@@ -50,7 +50,6 @@ public class OnBoarding extends AppCompatActivity {
         startActivity(new Intent(this, UserDashboard.class));
         finish();
     }
-   
 
     public void next(View view) {
         viewPager.setCurrentItem(currentPos + 1);
@@ -61,18 +60,16 @@ public class OnBoarding extends AppCompatActivity {
         dots = new TextView[5];
         dotsLayout.removeAllViews();
 
-        for (int i = 0 ; i< dots.length ; i++){
+        for (int i = 0; i < dots.length; i++) {
             dots[i] = new TextView(this);
-            dots[i].setText(Html.fromHtml("-"));
-            dots[i].setTextColor(getColor(R.color.grey));
-            dots[i].setTextSize(40);
+            dots[i].setText(Html.fromHtml("&#8226;"));
+            dots[i].setTextSize(35);
 
             dotsLayout.addView(dots[i]);
         }
 
-        if (dots.length > 0){
-            dots[position].setTextColor(getColor(R.color.purple));   //selected dot color
-            dots[position].setTextSize(40);  //selected dots size
+        if (dots.length > 0) {
+            dots[position].setTextColor(getResources().getColor(R.color.purple));
         }
 
     }
@@ -88,7 +85,6 @@ public class OnBoarding extends AppCompatActivity {
             addDots(position);
             currentPos = position;
 
-
             if (position == 0) {
                 letsGetStarted.setVisibility(View.INVISIBLE);
             } else if (position == 1) {
@@ -97,10 +93,6 @@ public class OnBoarding extends AppCompatActivity {
                 letsGetStarted.setVisibility(View.INVISIBLE);
             } else if (position == 3) {
                 letsGetStarted.setVisibility(View.INVISIBLE);
-            } else if (position == 4) {
-                letsGetStarted.setVisibility(View.INVISIBLE);
-            } else if (position == 5) {
-                letsGetStarted.setVisibility(View.INVISIBLE);
             } else {
                 animation = AnimationUtils.loadAnimation(OnBoarding.this, R.anim.bottom_anim);
                 letsGetStarted.setAnimation(animation);
@@ -108,8 +100,6 @@ public class OnBoarding extends AppCompatActivity {
             }
 
         }
-
-
 
         @Override
         public void onPageScrollStateChanged(int state) {
