@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AllCategories">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="#4C4A47">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/general_back_icon"
+                android:padding="15dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/general_search_icon"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comunicación"
+            android:textSize="35dp"
+            android:textColor="@color/purple"
+            android:fontFamily="@font/bevan"
+            android:padding="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="271dp"
+            android:layout_height="148dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="#FF923E"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="62dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/iconWpp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/comunicacionone"></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="161dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="-50dp"
+                android:fontFamily="@font/bevan"
+                android:text="Whatsapp"
+                android:textColor="@color/black"
+                android:textSize="25dp">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="271dp"
+            android:layout_height="148dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="#FF923E"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="62dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/iconFace"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/comunicaciontwo"></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="142dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="-50dp"
+                android:text="Facebook"
+                android:fontFamily="@font/bevan"
+                android:textColor="@color/black"
+                android:textSize="25dp">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="271dp"
+            android:layout_height="148dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="#FF923E"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="62dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/iconInsta"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:paddingTop="-10dp"
+                    android:src="@drawable/comunicacionthree"></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="159dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="-50dp"
+                android:fontFamily="@font/bevan"
+                android:text="Instagram"
+                android:textColor="@color/black"
+                android:textSize="25dp">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="271dp"
+            android:layout_height="148dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="#FF923E"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="62dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/iconTwit"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:paddingTop="-10dp"
+                    android:src="@drawable/comunicacionfour"></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="142dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="-50dp"
+                android:text="Twitter"
+                android:fontFamily="@font/bevan"
+                android:textColor="@color/black"
+                android:textSize="25dp">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

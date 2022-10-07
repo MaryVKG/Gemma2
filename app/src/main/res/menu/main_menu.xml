@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/barraUno"
+            android:icon="@drawable/inicio"/>
+
+        <item
+            android:id="@+id/nav_buscar"
+            android:title="@string/barraDos"
+            android:icon="@drawable/eyes"/>
+
+
+        <item
+
+            android:id="@+id/nav_nosotros"
+            android:title="@string/barraTres"
+            android:icon="@drawable/equipo"/>
+
+        <item
+            android:id="@+id/nav_contacto"
+            android:title="@string/barraCuatro"
+            android:icon="@drawable/contacto"/>
+    </group>
+
+    <item android:title="Perfil">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="@string/menuUno"
+                    android:icon="@drawable/profile"/>
+                <item
+                    android:id="@+id/nav_perfil"
+                    android:title="@string/menuDos"
+                    android:icon="@drawable/usuario"/>
+                <item
+                    android:id="@+id/nav_cerrarSesion"
+                    android:title="@string/menuTres"
+                    android:icon="@drawable/cerrarsesion"/>
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Productos">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_fritas"
+                    android:title="@string/menuCinco"
+                    android:icon="@drawable/hamburguesa"/>
+                <item
+                    android:id="@+id/nav_horno"
+                    android:title="@string/menuSeis"
+                    android:icon="@drawable/hamburguesa"/>
+                <item
+                    android:id="@+id/nav_vegana"
+                    android:title="@string/menuSiete"
+                    android:icon="@drawable/vegano"/>
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Compartir">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_instagram"
+                    android:title="@string/menuOcho"
+                    android:icon="@drawable/instagram"/>
+                <item
+                    android:id="@+id/nav_whatsapp"
+                    android:title="@string/menuNueve"
+                    android:icon="@drawable/whatsapp"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+</menu>
