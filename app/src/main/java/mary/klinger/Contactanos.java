@@ -41,7 +41,7 @@ public class Contactanos extends AppCompatActivity {
                 //Aca lo inicializamos
                 String number = "+56923823323";
                 Uri uri = Uri.parse(String.format(
-                        "http://wa.me/56923823323",number
+                        "https://api.whatsapp.com/send/?phone=56923823323&text&type=phone_number&app_absent=0",number
                 ));
                 //
                 //Aquí llamamos al intent
@@ -67,8 +67,8 @@ public class Contactanos extends AppCompatActivity {
         icon_insta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String sAppLink = "https://www.instagram.com/empanadasgemma2/";
-                String sPackage = "https://instagram.com/empanadasgemma2?igshid=YmMyMTA2M2Y=";
+                String sAppLink = "https://instagram.com/empanadasgemma2?igshid=YmMyMTA2M2Y=";
+                String sPackage = "https://www.instagram.com/empanadasgemma2/";
             }
         });
 
@@ -91,7 +91,7 @@ public class Contactanos extends AppCompatActivity {
            intent.setData(uri);
 
            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
+           startActivity(intent);
         }
     }
 }

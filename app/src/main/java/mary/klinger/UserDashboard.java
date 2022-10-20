@@ -53,7 +53,7 @@ public class UserDashboard extends AppCompatActivity implements  NavigationView.
 
         //Functions will be executed automatically when this activity will be created
         featuredRecycler();
-        mostViewedRecycler();
+        mostViewedRecycler(); 
         categoriesRecycler();
 
         //Acá se capturan los menus
@@ -135,6 +135,13 @@ public class UserDashboard extends AppCompatActivity implements  NavigationView.
                 startActivity(intentg);
                 break;
 
+            case  R.id.nav_login:
+                Intent intentA = new Intent(getApplicationContext(), Login.class);
+                startActivity(intentA);
+                break;
+
+
+
         }
 
 
@@ -180,10 +187,13 @@ public class UserDashboard extends AppCompatActivity implements  NavigationView.
         mostViewedRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
         ArrayList<MostViewedHelperClass> mostViewedLocations = new ArrayList<>();
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.mechada, "Mechada","holaaa descripcion"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.salmon, "Salmón","holaaa descripcion"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.seafood, "Marisco","holaaa descripcion"));
-       // mostViewedLocations.add(new MostViewedHelperClass(R.drawable.mechada, "Mechada","holaaa descripcion"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.gelatinauno, "Gelatina de fresa","holaaa descripcion"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.gelatina, "Gelatina en trozos","holaaa descripcion"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.flan, "Flan","holaaa descripcion"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.arroz, "Arroz con leche","holaaa descripcion"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.magdalena, "Magdalena","holaaa descripcion"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.mote, "Mote con huesillo","holaaa descripcion"));
+
 
         adapter = new MostViewedAdpater(mostViewedLocations);
         mostViewedRecycler.setAdapter(adapter);
@@ -199,20 +209,19 @@ public class UserDashboard extends AppCompatActivity implements  NavigationView.
 
         ArrayList<FeaturedHelperClass> featuredLocations = new ArrayList<>();
 
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.cardone, "Camarón", "Camarón queso frita con queso sin lactosa."));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card2, "Marisco", "Marisco frita con variedad de surtidos."));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card4, "Queso", "Queso frita con queso sin lactosa."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.latacoca, "Lata Coca-Cola", "Bebiba en lata de cocacola."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.fanta, "Lata Fanta", "Bebiba en lata de fanta."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.sprite, "Lata Sprite", "Bebiba en lata de sprite."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.pepsi, "Lata Pepsi", "Bebiba en lata de pepsi."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.bottlecoca, "Botella 1/2 Coca-Cola", "Bebiba de medio cocacola."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.bottlefanta, "Botella 1/2 Fanta", "Bebiba de medio fanta."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.bottlesprite, "Botella 1/2 Sprite", "Bebiba de medio sprite."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.manzana, "Jugo Manzana", "Jugo de manzana 200ml."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.jugo, "Jugo Naranja", "Jugo de naranja 200ml."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.agua, "Agua con gas", "Agua vital con gas."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.coffee, "Café de máquina", "Café en máquina de variados sabores."));
 
 
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.cardone, "Camarón", "Camarón queso frita con queso sin lactosa."));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card2, "Marisco", "Marisco frita con variedad de surtidos."));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card4, "Queso", "Queso frita con queso sin lactosa."));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.cardone, "Camarón", "Camarón queso frita con queso sin lactosa."));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card2, "Marisco", "Marisco frita con variedad de surtidos."));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card4, "Queso", "Queso frita con queso sin lactosa."));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.cardone, "Camarón", "Camarón queso frita con queso sin lactosa."));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card2, "Marisco", "Marisco frita con variedad de surtidos."));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card4, "Queso", "Queso frita con queso sin lactosa."));
 
 
         adapter = new FeaturedAdapter(featuredLocations);

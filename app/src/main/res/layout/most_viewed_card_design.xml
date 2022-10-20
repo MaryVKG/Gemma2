@@ -18,15 +18,15 @@
             android:id="@+id/mv_image"
             android:layout_width="100dp"
             android:layout_height="150dp"
-            android:src="@drawable/card5"
-            android:padding="40dp"
+            android:src="@drawable/gelatina"
+            android:padding="30dp"
             android:scaleType="centerCrop"/>
 
         <TextView
             android:id="@+id/mv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/favoritos"
+            android:text="@string/acompañamientos"
             android:layout_toRightOf="@id/mv_image"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"

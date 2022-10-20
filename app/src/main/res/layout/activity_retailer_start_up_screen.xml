@@ -48,25 +48,34 @@
             android:layout_marginTop="40dp">
 
             <Button
+                android:id="@+id/iniciarSesionBtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Iniciar Sesión"
                 android:layout_weight="1"
+                tools:ignore="ButtonStyle"
+                android:transitionName="transitionLogin"
+                android:onClick="callLoginScreen"
                 android:layout_marginRight="10dp"/>
 
             <Button
+                android:id="@+id/registroBtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Registarse"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"/>
+                android:text="Registrarse"
+                android:layout_weight="1"
+                tools:ignore="ButtonStyle"
+                android:transitionName="transitionSignUp"
+                android:onClick="callSignUpScreen"
+                android:layout_marginRight="10dp"/>
         </LinearLayout>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Como trabajamos"
+            android:text="¿Cómo trabajamos?"
             android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
             android:layout_weight="1"/>
 
     </LinearLayout>

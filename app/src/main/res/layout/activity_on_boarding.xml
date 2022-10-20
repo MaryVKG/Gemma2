@@ -20,13 +20,13 @@
 
     <Button
         android:id="@+id/skip_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="43dp"
         android:background="#000000"
         android:drawableEnd="@drawable/skip_icon"
         android:drawableRight="@drawable/skip_icon"
         android:onClick="skip"
-        android:padding="10dp"
+        android:padding="4dp"
         android:text="@string/skip_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,6 +45,7 @@
             android:layout_height="wrap_content"
             android:background="@color/purple_200"
             android:text="@string/let_get_started"
+            android:onClick="next"
             android:visibility="invisible"/>
 
 
@@ -59,16 +60,17 @@
 
         <Button
             android:id="@+id/next_btn"
-            android:layout_width="51dp"
-            android:layout_height="37dp"
+            android:layout_width="56dp"
+            android:layout_height="31dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:layout_marginRight="17dp"
-            android:layout_marginBottom="26dp"
+            android:layout_marginBottom="32dp"
+            android:padding="10dp"
             android:background="@color/teal_700"
             android:drawableEnd="@drawable/next_btn"
             android:drawableRight="@drawable/next_btn"
-            android:onClick="next"
+            android:onClick="sig"
             android:paddingBottom="20dp" />
 
     </RelativeLayout>

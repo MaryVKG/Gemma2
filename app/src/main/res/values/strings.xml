@@ -39,10 +39,10 @@
     <string name="search_text">BUSCAR...</string>
 
     <!--CARDVIEW 1-->
-    <string name="productosCard">Nuestros Productos</string>
+    <string name="productosCard">Bebestibles</string>
 
     <!--CARDVIEW 2-->
-    <string name="favoritos">Favoritos</string>
+    <string name="acompañamientos">Postres</string>
 
     <!--CARDVIEW 3-->
     <string name="opciones">Preparaciones</string>
@@ -54,7 +54,7 @@
 
 
     <!--Descripciones cardview-->
-    <string name="productosDes">Acá veras nuestro listado de empanadas, como la descripción e ingredientes y otros detalles.</string>
+    <string name="productosDes">Para que acompañes tus ricas empanadas, te presentamos el listado de bebestibles.</string>
     <string name="productosFav">Agregado a favoritos</string>
 
 
@@ -72,8 +72,8 @@
     <string name="menuCinco">Fritas</string>
     <string name="menuSeis">Horno</string>
     <string name="menuSiete">Vegana</string>
-    <string name="menuOcho">Instagram</string>
-    <string name="menuNueve">WhatsAapp</string>
+    <string name="menuOcho">Retiro</string>
+    <string name="menuNueve">Delivery</string>
 
 
     <!--Para el header del menú-->
@@ -94,12 +94,32 @@
     <string name="miembrosDescripcion">Ver información</string>
 
 
-    <!--Para el activity del login-->
+    <!--Para el activity del Retail StarUp-->
 
-    <string name="sign_up">Registrarse></string>
+    <string name="sign_up">Registrarse</string>
     <string name="retailer_heading">Bienvenidos a Gemma2</string>
     <string name="retailer_tag_line">Las mejores empanadas del litoral central</string>
     <string name="create_account">Crear cuenta</string>
     <string name="remember_me">Recuerdame</string>
     <string name="forgot_password">Olvide mi contraseña</string>
+
+
+    <!--Para el activity del Login-->
+    <string name="home">INICIO</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="crear">Crear Cuenta</string>
+
+    <string name="profile">Perfil</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="share">Compartir</string>
+    <string name="deliverrr">Haz tu pedido</string>
+
+
+    <!--Aquí las variables del registro-->
+    <string name="fullname">Nombre Completo</string>
+    <string name="username">Usuario</string>
+    <string name="email">Correo Eléctronico</string>
+    <string name="phone">Teléfono</string>
+    <string name="pass">Contraseña</string>
 </resources>
