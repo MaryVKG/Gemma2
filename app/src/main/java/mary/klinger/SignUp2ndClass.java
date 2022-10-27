@@ -28,6 +28,13 @@ public class SignUp2ndClass extends AppCompatActivity {
         next = findViewById(R.id.signup_next_button);
         login = findViewById(R.id.signup_login_button);
         tittleText = findViewById(R.id.signup_tittle_text);
+
+        backkBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SignUp2ndClass.super.onBackPressed();
+            }
+        });
     }
 
     public void callNextSignUpScreen(View view) {

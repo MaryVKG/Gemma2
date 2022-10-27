@@ -46,6 +46,9 @@
                 app:ccp_autoDetectCountry="true"
                 app:ccp_showFlag="true"
                 app:ccp_showFullName="true"
+                app:ccpDialog_textColor="@color/white"
+                app:ccpDialog_searchEditTextTint="@color/colorSecondary"
+                app:ccp_contentColor="@color/colorSecondary"
                 android:background="@color/purple_700"/>
 
 

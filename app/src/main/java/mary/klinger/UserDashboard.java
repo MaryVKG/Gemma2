@@ -140,6 +140,11 @@ public class UserDashboard extends AppCompatActivity implements  NavigationView.
                 startActivity(intentA);
                 break;
 
+            case  R.id.nav_delivery:
+                Intent intentB = new Intent(getApplicationContext(), EntregaDelivery.class);
+                startActivity(intentB);
+                break;
+
 
 
         }
